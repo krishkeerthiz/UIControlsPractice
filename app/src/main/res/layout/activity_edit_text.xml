@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="40dp"
+    android:paddingEnd="50dp"
+    android:orientation="vertical" android:id="@+id/linearlayout" >
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="14"
+        android:hint="Name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password 0 to 9"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        android:textColorHighlight="@color/material_dynamic_neutral10" />
+    <EditText
+        android:id="@+id/txtEmai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:inputType="date"
+        android:minWidth="48dp"
+        android:minHeight="48dp" />
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:gravity="center"
+        android:textColorHint="#FE8DAB"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/rdGroup">
+
+        <RadioButton
+            android:id="@+id/rdbJava"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="100dp"
+            android:text="Java" />
+        <RadioButton
+            android:id="@+id/rdbPython"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginStart="100dp"
+            android:text="Python" />
+        <RadioButton
+            android:id="@+id/rdbAndroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Android" />
+        <RadioButton
+            android:id="@+id/rdbAngular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="100dp"
+            android:text="React JS"
+            />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/chkJava"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="50dp"
+        android:text="Java"
+        />
+    <CheckBox
+        android:id="@+id/chkPython"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginStart="100dp"
+        android:text="Python" />
+    <CheckBox
+        android:id="@+id/chkAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/teal_700"
+        android:layout_marginStart="100dp"
+        android:text="Android" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:text="next"
+        android:textSize="16sp"
+        android:textStyle="normal|bold" />
+
+</LinearLayout>
